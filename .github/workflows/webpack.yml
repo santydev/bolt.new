@@ -31,7 +31,6 @@ jobs:
           ${{ runner.os }}-node-modules-
 
     - name: Install dependencies
-      run: npm ci  # Utilise npm ci pour des installations plus rapides et reproductibles
-
+      run: npm install   # Utilise npm install 
     - name: Build with Webpack
       run: npx webpack --config webpack.config.js  # Si tu as un fichier de configuration spécifique
